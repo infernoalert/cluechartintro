@@ -1,0 +1,24 @@
+<section class="py-16 md:py-24 px-4 md:px-10 bg-background-light dark:bg-background-dark">
+  <div class="max-w-5xl mx-auto">
+    <header class="flex flex-col items-center text-center mb-16">
+      <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">The Outcome</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-6">From Chaos to Clarity</h2>
+      <p class="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
+        Frank stopped writing generic prompts and started reviewing expert work. He moved from being a bottleneck to being a director.
+      </p>
+    </header>
+    <div class="grid md:grid-cols-3 gap-6">
+      <article *ngFor="let outcome of outcomes" 
+               class="bg-white dark:bg-slate-800 p-6 rounded-lg border-t-4 border-primary shadow-sm">
+        <div class="mb-4 text-primary">
+          <span class="material-symbols-outlined text-4xl">{{ outcome.icon }}</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">{{ outcome.title }}</h3>
+        <p class="text-slate-600 dark:text-slate-400 text-sm">
+          {{ outcome.description }}
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+

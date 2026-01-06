@@ -1,0 +1,16 @@
+<div class="diagram-list">
+  <h3>Available Diagrams</h3>
+  <ul class="diagram-items">
+    <li 
+      *ngFor="let diagram of diagrams" 
+      class="diagram-item"
+      [class.active]="diagram.file === selectedFile"
+      (click)="onSelectDiagram(diagram.file)">
+      <span class="diagram-title">{{ diagram.title }}</span>
+      <span class="diagram-arrow">→</span>
+    </li>
+  </ul>
+  <div *ngIf="diagrams.length === 0" class="no-diagrams">
+    No diagrams available
+  </div>
+</div>

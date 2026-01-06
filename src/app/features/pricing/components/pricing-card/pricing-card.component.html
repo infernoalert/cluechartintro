@@ -1,0 +1,80 @@
+<article 
+  class="flex flex-col h-full rounded-xl border bg-white dark:bg-[#1c2936] p-8 relative transition-shadow"
+  [class.border-gray-200]="!isPopular"
+  [class.dark:border-gray-700]="!isPopular"
+  [class.border-2]="isPopular"
+  [class.border-primary]="isPopular"
+  [class.shadow-sm]="!isPopular"
+  [class.hover:shadow-md]="!isPopular"
+  [class.shadow-lg]="isPopular">
+  
+  <!-- Most Popular Badge -->
+  <div *ngIf="isPopular" class="absolute top-0 right-0 transform translate-x-2 -translate-y-2">
+    <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">MOST POPULAR</span>
+  </div>
+  
+  <div class="mb-6">
+    <div class="flex justify-between items-start" *ngIf="proBadge">
+      <h3 
+        class="text-xl font-bold text-primary mb-2">
+        {{ title }}
+      </h3>
+      <span class="bg-primary/10 text-primary text-xs font-bold px-2 py-1 rounded">PRO</span>
+    </div>
+    <h3 
+      *ngIf="!proBadge"
+      class="text-xl font-bold mb-2 text-[#0d151b] dark:text-white">
+      {{ title }}
+    </h3>
+    <p class="text-sm text-[#4c779a] dark:text-slate-400 mb-6 h-10">{{ description }}</p>
+    <div class="flex flex-wrap items-baseline gap-3 mb-2">
+      <span class="text-4xl font-black text-[#0d151b] dark:text-white tracking-tight">{{ price }}</span>
+      <span *ngIf="pricePeriod" class="text-lg font-bold text-[#4c779a] dark:text-slate-500">{{ pricePeriod }}</span>
+      <span *ngIf="originalPrice" class="text-lg font-medium text-[#4c779a] dark:text-slate-500 line-through">{{ originalPrice }}</span>
+      <span *ngIf="badge" class="text-sm font-bold text-primary bg-primary/10 px-2 py-1 rounded ml-auto sm:ml-0">{{ badge }}</span>
+    </div>
+    <p *ngIf="priceSubtext" class="text-xs text-slate-500 mt-1">{{ priceSubtext }}</p>
+  </div>
+  
+  <button 
+    *ngIf="!isPopular && !routerLink"
+    class="w-full h-12 rounded-lg bg-slate-100 dark:bg-slate-700 text-[#0d151b] dark:text-white font-bold text-sm hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors mb-8">
+    {{ buttonText }}
+  </button>
+  <a
+    *ngIf="!isPopular && routerLink"
+    [routerLink]="routerLink"
+    class="w-full h-12 rounded-lg bg-slate-100 dark:bg-slate-700 text-[#0d151b] dark:text-white font-bold text-sm hover:bg-slate-200 dark:hover:bg-slate-600 transition-colors mb-8 flex items-center justify-center">
+    {{ buttonText }}
+  </a>
+  <button 
+    *ngIf="isPopular && !routerLink"
+    class="w-full h-12 rounded-lg bg-primary text-white font-bold text-sm hover:bg-primary/90 transition-colors shadow-md shadow-primary/20 mb-8">
+    {{ buttonText }}
+  </button>
+  <a
+    *ngIf="isPopular && routerLink"
+    [routerLink]="routerLink"
+    class="w-full h-12 rounded-lg bg-primary text-white font-bold text-sm hover:bg-primary/90 transition-colors shadow-md shadow-primary/20 mb-8 flex items-center justify-center">
+    {{ buttonText }}
+  </a>
+  
+  <div class="flex flex-col gap-4 border-t border-gray-100 dark:border-gray-700 pt-6 flex-1">
+    <p class="text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400 mb-2">Features</p>
+    
+    <div 
+      *ngFor="let feature of features; let last = last"
+      class="flex justify-between items-center py-2"
+      [class.border-b]="!last"
+      [class.border-gray-50]="!last"
+      [class.dark:border-gray-800]="!last">
+      <span class="text-sm font-medium text-slate-600 dark:text-slate-300">{{ feature.label }}</span>
+      <div *ngIf="showIcons && feature.icon" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary text-[20px]">{{ feature.icon }}</span>
+        <span class="text-sm font-bold text-[#0d151b] dark:text-white text-right">{{ feature.value }}</span>
+      </div>
+      <span *ngIf="!showIcons || !feature.icon" class="text-sm font-bold text-[#0d151b] dark:text-white text-right">{{ feature.value }}</span>
+    </div>
+  </div>
+</article>
+

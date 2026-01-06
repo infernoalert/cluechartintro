@@ -1,0 +1,21 @@
+<section class="w-full py-24 bg-slate-900 text-white relative">
+  <!-- Background Image -->
+  <div class="absolute inset-0 opacity-20 bg-cover bg-center mix-blend-overlay"
+       [style.background-image]="'url(https://lh3.googleusercontent.com/aida-public/AB6AXuAHQTVNAjPS9-r8RKrTkor6rWgiyBbj7fH5pby2oydCPAHGg5RR2LqB90p3Qukvx3FrByPcV5SOsl13atf0AT5QZsxEU2Z-auLRkqdsHGe5rqYAMT4VbOccoLa8eYCr9whXMHEodp6tAAzA_TwxirQOQj6i1eMVnNdSVPzjgSOgRdfEcZ8wVwkVz0ygqoUN_AcD9ubxQ9QHRrag8ZSA7pMzc3FItafPw0oi4lsTINT49tJD1y9-qJyN2VWjJ5WEjHpZfiniaxlau_AR)'">
+  </div>
+  <div class="relative max-w-[960px] mx-auto px-6 text-center">
+    <h2 class="text-3xl md:text-4xl font-bold mb-6">From Paralyzed to Signed</h2>
+    <p class="text-slate-300 text-lg mb-12 max-w-2xl mx-auto">
+      Sarah didn't just open a shop. She opened a destination. By avoiding the "dead zone" two streets over, she secured 40% more walk-in traffic on day one.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+      <article *ngFor="let outcome of outcomes" 
+               class="bg-white/10 backdrop-blur-md border border-white/10 p-6 rounded-xl">
+        <div class="text-primary font-bold text-4xl mb-2">{{ outcome.number }}</div>
+        <h3 class="font-bold text-xl mb-2">{{ outcome.title }}</h3>
+        <p class="text-slate-300 text-sm">{{ outcome.description }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+

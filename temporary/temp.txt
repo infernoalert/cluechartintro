@@ -1,0 +1,4 @@
+Use GA4 or a privacy‑first tool (e.g. Plausible/Simple Analytics) as your main analytics source of truth.
+​
+
+Add one UX tool (Hotjar or Microsoft Clarity) for heatmaps + recordings.

@@ -1,0 +1,108 @@
+This is a standard document. It formally codifies the architectural rules we have established so that you don't have to repeat them for every new feature.
+
+Frontend Architecture & Development Standards
+Version: 1.0 Project: ClueChart Application Enforcement: All Pull Requests (PRs) must adhere to these standards to be approved.
+
+1. Component Architecture
+We follow the Container vs. Presentational pattern to prevent monolithic files.
+
+1.1 The "Container" (Smart) Component
+Role: Acts as the orchestrator. It fetches data and manages the layout of sections.
+
+Location: app/pages/ (for page roots) or top-level features/.
+
+Rule: The template must be declarative. It should look like a list of contents, not a wall of HTML.
+
+Example (Good):
+
+HTML
+
+<main>
+  <app-home-hero />
+  <app-home-problem />
+  <app-home-workflow />
+</main>
+1.2 The "Presentational" (Dumb) Component
+Role: Renders a specific section of the UI (e.g., a Hero section, a Pricing Card).
+
+Location: app/features/[feature-name]/components/.
+
+Rule: These components should be standalone.
+
+Rule: They must isolate their own logic and styles.
+
+2. HTML Semantics & Structure
+We strictly avoid "Div Soup." The HTML structure must describe the content's purpose.
+
+2.1 Semantic Tags
+<main>: Used once per page view to wrap the primary content.
+
+<section>: Used for major vertical segments of a page (e.g., Hero, Pricing, Team).
+
+
+<article>: Used for self-contained content cards (e.g., Blog posts, Agent profiles, Service cards).
+
+
+<header> / <footer>: Used for introductory content or concluding content within sections or the page.
+
+2.2 Reusability (DRY Principle)
+
+Anti-Pattern: Copy-pasting the same HTML block multiple times (e.g., repeating a card div 8 times).
+
+
+
+Standard: Use Structural Directives (*ngFor / @for) or extract repeating UI elements into a shared component (e.g., <app-card>).
+
+
+3. Styling & Theming
+We use SCSS with Angular View Encapsulation.
+
+3.1 No Magic Values
+
+Colors: Do not hardcode hex codes (e.g., #15202b) in templates or component styles. Use Tailwind utility classes (e.g., bg-primary, text-slate-600) or defined CSS variables.
+
+
+
+
+Fonts: Do not declare global font families in component-level SCSS files. This belongs in styles.scss or the global body tag.
+
+
+3.2 View Encapsulation
+Specific animations (like scan-animation) or complex 3D transforms should live inside the component that uses them, not in the global stylesheet.
+
+
+4. Routing & Performance
+We prioritize initial load time using Lazy Loading.
+
+4.1 Route Configuration
+Do not import feature pages directly in app.routes.ts.
+
+Standard: Use the loadComponent syntax to ensure chunks are only downloaded when requested.
+
+TypeScript
+
+{
+  path: 'pricing',
+  loadComponent: () => import('./features/pricing/pricing.component').then(m => m.PricingComponent)
+}
+5. File Organization
+app/pages/: Used only for complex views that require orchestrating multiple sub-features (e.g., Home, Dashboard).
+
+
+app/features/: Contains the bulk of the application logic, grouped by domain (e.g., marketing, pricing, team).
+
+
+app/components/: strictly for global, generic UI atoms (Buttons, Cards, Modals) used across multiple features.
+
+6. Pre-Merge Checklist
+Before submitting a Pull Request, the developer must verify:
+
+[ ] Is the HTML semantic (no unnecessary div wrappers)?
+
+[ ] Are repeating elements handled via loops or sub-components?
+
+[ ] Are magic colors replaced with Tailwind/Theme variables?
+
+[ ] Is the component Lazy Loaded?
+
+[ ] Does the component utilize existing global components (Header, Footer) instead of recreating them?

@@ -1,0 +1,141 @@
+<header class="sticky top-0 z-50 bg-[#f6f7f8]/95 dark:bg-[#101a22]/95 backdrop-blur-sm border-b border-slate-200 dark:border-slate-800">
+  <div class="flex justify-center w-full">
+    <div class="flex items-center justify-between w-full max-w-7xl h-16 px-4 md:px-8 lg:px-10">
+      <a routerLink="/" class="flex items-center gap-2 text-text-dark dark:text-white no-underline">
+        <img src="/assets/logo.png" alt="Logo" class="h-6 w-6 object-contain">
+        <h2 class="font-display text-lg font-bold leading-tight tracking-[-0.015em] text-text-dark dark:text-white m-0">ClueChart</h2>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex flex-1 justify-end items-center gap-2 sm:gap-4 md:gap-8">
+        <nav class="flex items-center gap-2 sm:gap-4 md:gap-6">
+          <a routerLink="/how-it-works" class="font-sans text-xs sm:text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:text-primary whitespace-nowrap">How It Works</a>
+          <a routerLink="/pricing" class="font-sans text-xs sm:text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:text-primary whitespace-nowrap">Pricing</a>
+          <div class="relative" (mouseenter)="onUseCaseMouseEnter()" (mouseleave)="onUseCaseMouseLeave()">
+            <button type="button" (click)="onUseCaseClick($event)" class="flex items-center gap-1 cursor-pointer font-sans text-xs sm:text-sm font-medium text-text-dark dark:text-white bg-transparent border-0 p-0 transition-colors hover:text-primary whitespace-nowrap">
+              Use Case
+              <span class="material-symbols-outlined text-sm sm:text-base transition-transform" [class.rotate-180]="showUseCaseMenu">expand_more</span>
+            </button>
+            <div class="absolute top-full right-0 md:left-0 pt-2 min-w-[200px] z-[100]" 
+                 (mouseenter)="onUseCaseMouseEnter()" 
+                 (mouseleave)="onUseCaseMouseLeave()"
+                 (click)="$event.stopPropagation()">
+              <div class="bg-white dark:bg-[#1a2024] rounded-lg shadow-lg py-2 border border-slate-200 dark:border-slate-800 transition-all duration-200" 
+                   [class.opacity-100]="showUseCaseMenu"
+                   [class.opacity-0]="!showUseCaseMenu"
+                   [class.translate-y-0]="showUseCaseMenu"
+                   [class.-translate-y-2]="!showUseCaseMenu"
+                   [class.pointer-events-auto]="showUseCaseMenu"
+                   [class.pointer-events-none]="!showUseCaseMenu"
+                   [attr.data-debug-menu-state]="showUseCaseMenu ? 'visible' : 'hidden'">
+                <a routerLink="/start-up" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Start Up</a>
+                <a routerLink="/marketing" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Marketing</a>
+                <a routerLink="/start-local-business" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Start Local Business</a>
+                <a routerLink="/team" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Your AI Team</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <a href="https://agents.cluechart.com/" class="flex items-center justify-center h-9 sm:h-10 px-3 sm:px-4 rounded-lg bg-primary hover:bg-primary/90 text-white font-sans text-xs sm:text-sm font-bold no-underline shadow-sm transition-colors whitespace-nowrap" target="_blank" rel="noopener noreferrer">
+          Request a Demo
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button 
+        type="button"
+        (click)="toggleMobileMenu()"
+        class="md:hidden flex items-center justify-center w-10 h-10 text-text-dark dark:text-white hover:text-primary transition-colors"
+        aria-label="Toggle mobile menu">
+        <span class="material-symbols-outlined text-2xl" [class.hidden]="showMobileMenu">menu</span>
+        <span class="material-symbols-outlined text-2xl" [class.hidden]="!showMobileMenu">close</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div 
+    *ngIf="showMobileMenu"
+    class="fixed inset-0 w-full h-screen bg-white dark:bg-[#1a2024] z-50 md:hidden overflow-y-auto">
+    <div class="flex flex-col h-full">
+      <!-- Mobile Menu Header -->
+      <div class="flex items-center justify-between p-4 border-b border-slate-200 dark:border-slate-800">
+        <a routerLink="/" (click)="closeMobileMenu()" class="flex items-center gap-2 text-text-dark dark:text-white no-underline">
+          <img src="/assets/logo.png" alt="Logo" class="h-6 w-6 object-contain">
+          <h2 class="font-display text-lg font-bold leading-tight tracking-[-0.015em] text-text-dark dark:text-white m-0">ClueChart</h2>
+        </a>
+        <button 
+          type="button"
+          (click)="closeMobileMenu()"
+          class="flex items-center justify-center w-10 h-10 text-text-dark dark:text-white hover:text-primary transition-colors"
+          aria-label="Close mobile menu">
+          <span class="material-symbols-outlined text-2xl">close</span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Content -->
+      <nav class="flex flex-col flex-1 p-4 gap-2">
+        <a 
+          routerLink="/how-it-works" 
+          (click)="onMobileMenuLinkClick()"
+          class="px-4 py-3 rounded-lg font-sans text-base font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+          How It Works
+        </a>
+        <a 
+          routerLink="/pricing" 
+          (click)="onMobileMenuLinkClick()"
+          class="px-4 py-3 rounded-lg font-sans text-base font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+          Pricing
+        </a>
+        
+        <!-- Use Case Dropdown in Mobile Menu -->
+        <div class="flex flex-col">
+          <button 
+            type="button"
+            (click)="showUseCaseMenu = !showUseCaseMenu"
+            class="flex items-center justify-between px-4 py-3 rounded-lg font-sans text-base font-medium text-text-dark dark:text-white bg-transparent border-0 transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+            <span>Use Case</span>
+            <span class="material-symbols-outlined text-lg transition-transform" [class.rotate-180]="showUseCaseMenu">expand_more</span>
+          </button>
+          <div 
+            *ngIf="showUseCaseMenu"
+            class="flex flex-col pl-4 mt-1 gap-1">
+            <a 
+              routerLink="/start-up" 
+              (click)="onMobileMenuLinkClick()"
+              class="px-4 py-2 rounded-lg font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+              Start Up
+            </a>
+            <a 
+              routerLink="/marketing" 
+              (click)="onMobileMenuLinkClick()"
+              class="px-4 py-2 rounded-lg font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+              Marketing
+            </a>
+            <a 
+              routerLink="/start-local-business" 
+              (click)="onMobileMenuLinkClick()"
+              class="px-4 py-2 rounded-lg font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+              Start Local Business
+            </a>
+            <a 
+              routerLink="/team" 
+              (click)="onMobileMenuLinkClick()"
+              class="px-4 py-2 rounded-lg font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+              Your AI Team
+            </a>
+          </div>
+        </div>
+
+        <a 
+          href="https://agents.cluechart.com/" 
+          (click)="closeMobileMenu()"
+          class="flex items-center justify-center mt-4 px-4 py-3 rounded-lg bg-primary hover:bg-primary/90 text-white font-sans text-base font-bold no-underline shadow-sm transition-colors"
+          target="_blank" 
+          rel="noopener noreferrer">
+          Request a Demo
+        </a>
+      </nav>
+    </div>
+  </div>
+</header>

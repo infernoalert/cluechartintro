@@ -1,0 +1,15 @@
+:host {
+  display: block;
+  width: 100%;
+}
+
+::ng-deep app-youtube-video {
+  display: block;
+  width: 100%;
+  
+  .youtube-video-container {
+    margin: 0;
+    border-radius: 0.75rem; // rounded-xl
+  }
+}
+

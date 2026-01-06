@@ -1,0 +1,33 @@
+<section class="w-full flex flex-col items-center">
+  <div class="max-w-[1024px] w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <!-- The Architect Card -->
+      <app-pricing-card
+        title="The Architect"
+        description="Ideal for individuals starting their AI journey."
+        price="Free"
+        pricePeriod="Forever"
+        buttonText="Coming Soon"
+        [features]="architectFeatures"
+        [showIcons]="false">
+      </app-pricing-card>
+      
+      <!-- The Orchestrator Card -->
+      <app-pricing-card
+        title="The Orchestrator"
+        description="Ideal for businesses scaling complex workflows."
+        price="$0"
+        originalPrice="~~$49~~"
+        badge="Free during Beta"
+        priceSubtext="per month, billed annually"
+        buttonText="Request Free Beta Test"
+        routerLink="/"
+        [proBadge]="true"
+        [isPopular]="true"
+        [features]="orchestratorFeatures"
+        [showIcons]="true">
+      </app-pricing-card>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,118 @@
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766718052769,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766718133575,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766718176288,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766718179454,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718521683,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718521684,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718522333,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718522334,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718524398,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718524399,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718524400,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718524401,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766718665284,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766718668173,"sessionId":"debug-session","runId":"run1"}
+{"location":"app.component.ts:21","message":"Route navigation","data":{"url":"/start-up","urlAfterRedirects":"/start-up"},"timestamp":1766718668307,"sessionId":"debug-session","runId":"run1","hypothesisId":"B"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718669869,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718669870,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718669873,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718669874,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718669934,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718669935,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"click on Use Case link","data":{"showUseCaseMenu":false,"hypothesisId":"C"},"timestamp":1766718671446,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"click toggled menu","data":{"showUseCaseMenu":true,"hypothesisId":"C"},"timestamp":1766718671447,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718672148,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718672149,"sessionId":"debug-session","runId":"run1"}
+{"location":"start-local-business.component.ts:31","message":"Component constructor called","data":{},"timestamp":1766718674017,"sessionId":"debug-session","runId":"run1","hypothesisId":"C"}
+{"location":"start-local-business.component.ts:41","message":"Component ngAfterViewInit called","data":{},"timestamp":1766718674043,"sessionId":"debug-session","runId":"run1","hypothesisId":"D"}
+{"location":"app.component.ts:21","message":"Route navigation","data":{"url":"/start-local-business","urlAfterRedirects":"/start-local-business"},"timestamp":1766718674025,"sessionId":"debug-session","runId":"run1","hypothesisId":"B"}
+{"location":"start-local-business.component.ts:36","message":"Component ngOnInit called","data":{},"timestamp":1766718674025,"sessionId":"debug-session","runId":"run1","hypothesisId":"C"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718674831,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718674832,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718674833,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718674834,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718685161,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718685162,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718685161,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718685163,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718685229,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718685229,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718685230,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718685230,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718685761,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718685762,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718688326,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766718688326,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766718688376,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718688377,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766718688378,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766718688378,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766719058893,"sessionId":"debug-session","runId":"run1"}
+{"location":"start-local-business.component.ts:31","message":"Component constructor called","data":{},"timestamp":1766719062735,"sessionId":"debug-session","runId":"run1","hypothesisId":"C"}
+{"location":"start-local-business.component.ts:36","message":"Component ngOnInit called","data":{},"timestamp":1766719062770,"sessionId":"debug-session","runId":"run1","hypothesisId":"C"}
+{"location":"start-local-business.component.ts:41","message":"Component ngAfterViewInit called","data":{},"timestamp":1766719062841,"sessionId":"debug-session","runId":"run1","hypothesisId":"D"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766719168964,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766719168965,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766719168966,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766719168966,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766719169914,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766719169915,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766719169916,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766719169917,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766719232718,"sessionId":"debug-session","runId":"run1"}
+{"location":"start-local-business.component.ts:31","message":"Component constructor called","data":{},"timestamp":1766719232956,"sessionId":"debug-session","runId":"run1","hypothesisId":"C"}
+{"location":"start-local-business.component.ts:36","message":"Component ngOnInit called","data":{},"timestamp":1766719232986,"sessionId":"debug-session","runId":"run1","hypothesisId":"C"}
+{"location":"start-local-business.component.ts:41","message":"Component ngAfterViewInit called","data":{},"timestamp":1766719233047,"sessionId":"debug-session","runId":"run1","hypothesisId":"D"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766734891167,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766736061459,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736069024,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736069025,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766736069027,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736069028,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766736069142,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736069143,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736069144,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736069145,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736069293,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736069293,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766736070657,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736070658,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736071977,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736071978,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736071979,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736071979,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736123539,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736123540,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766736123607,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736123607,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736123829,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736123830,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766736124272,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736124273,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736125018,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736125019,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736125020,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736125019,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766736591414,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736705844,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736705846,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766736705847,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766736705848,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736708109,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736708110,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766736708112,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766736708113,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766736757231,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766738029491,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766738029494,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to true","data":{"after":true,"hypothesisId":"B"},"timestamp":1766738029496,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766738029530,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766738029530,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseleave on Use Case parent","data":{"before":false,"hypothesisId":"A"},"timestamp":1766738029531,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"mouseenter on Use Case parent","data":{"before":true,"hypothesisId":"A"},"timestamp":1766738029495,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"showUseCaseMenu set to false","data":{"after":false,"hypothesisId":"B"},"timestamp":1766738029532,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766740923979,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766741107039,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766741112017,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766741115964,"sessionId":"debug-session","runId":"run1"}
+{"location":"header.component.ts","message":"HeaderComponent initialized","data":{"showUseCaseMenu":false,"hypothesisId":"B"},"timestamp":1766741603318,"sessionId":"debug-session","runId":"run1"}

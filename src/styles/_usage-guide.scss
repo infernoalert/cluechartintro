@@ -1,0 +1,217 @@
+// =============================================================================
+// DESIGN SYSTEM USAGE GUIDE
+// =============================================================================
+
+/*
+This file contains examples of how to use the design system variables
+in your Angular components. Copy and adapt these patterns as needed.
+
+IMPORTANT: Always import the variables file at the top of your component SCSS:
+@import 'styles/variables';
+*/
+
+// =============================================================================
+// COMPONENT STYLES EXAMPLES
+// =============================================================================
+
+// Example 1: Basic component with theme colors
+.example-component {
+  @include theme($background, $foreground);
+  padding: 2rem;
+  border-radius: $border-radius-default;
+  
+  h2 {
+    color: $primary-blue;
+    font-weight: $font-weight-bold;
+  }
+  
+  p {
+    @include text-secondary;
+  }
+}
+
+// Example 2: Card component
+.example-card {
+  @include subtle-container;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  
+  .card-title {
+    font-weight: $font-weight-bold;
+    color: $foreground;
+    margin-bottom: 1rem;
+  }
+  
+  .card-content {
+    @include text-secondary;
+    line-height: 1.6;
+  }
+  
+  .card-actions {
+    margin-top: 1.5rem;
+    
+    .btn {
+      @extend .button;
+      
+      &.primary {
+        @extend .button.primary;
+      }
+      
+      &.secondary {
+        @extend .button.secondary;
+      }
+    }
+  }
+}
+
+// Example 3: Navigation component
+.example-nav {
+  background-color: $subtle-background;
+  border-bottom: 1px solid $border;
+  padding: 1rem 2rem;
+  
+  .nav-brand {
+    font-weight: $font-weight-bold;
+    color: $primary-blue;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    
+    .nav-link {
+      font-weight: $font-weight-medium;
+      color: $foreground;
+      text-decoration: none;
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $primary-blue;
+      }
+    }
+  }
+}
+
+// Example 4: Form components
+.example-form {
+  .form-group {
+    margin-bottom: 1.5rem;
+    
+    label {
+      font-weight: $font-weight-medium;
+      color: $foreground;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    
+    input, textarea, select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid $border;
+      border-radius: $border-radius-default;
+      background-color: $background;
+      color: $foreground;
+      font-family: $font-family-primary;
+      font-size: 1rem;
+      
+      &:focus {
+        outline: none;
+        border-color: $primary-blue;
+        box-shadow: 0 0 0 2px rgba($primary-blue, 0.2);
+      }
+    }
+  }
+  
+  .form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    
+    .btn {
+      @extend .button;
+      
+      &.primary {
+        @extend .button.primary;
+      }
+      
+      &.secondary {
+        @extend .button.secondary;
+      }
+    }
+  }
+}
+
+// Example 5: Hero section
+.example-hero {
+  background: linear-gradient(135deg, $background 0%, $subtle-background 100%);
+  padding: 4rem 2rem;
+  border-radius: $border-radius-large;
+  text-align: center;
+  
+  h1 {
+    font-weight: $font-weight-extrabold;
+    color: $foreground;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-subtitle {
+    @include text-secondary;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero-cta {
+    @extend .button;
+    @extend .button.primary;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+// =============================================================================
+// UTILITY CLASS USAGE
+// =============================================================================
+
+/*
+You can use these utility classes directly in your HTML templates:
+
+Color utilities:
+- .text-primary (orange accent color)
+- .text-secondary (reduced opacity text)
+- .bg-subtle (subtle background color)
+
+Border utilities:
+- .border-default (8px border radius)
+- .border-large (12px border radius)
+- .border-extra-large (16px border radius)
+- .border-pill (fully rounded)
+
+Component utilities:
+- .card (pre-styled card container)
+- .button.primary (orange primary button)
+- .button.secondary (outlined secondary button)
+- .button.pill (pill-shaped button)
+*/
+
+// =============================================================================
+// DARK MODE IMPLEMENTATION
+// =============================================================================
+
+/*
+To implement dark mode in your components:
+
+1. Use the theme mixin for background and text colors:
+   @include theme($background, $foreground);
+
+2. The global styles will automatically handle dark mode via:
+   - CSS media query: @media (prefers-color-scheme: dark)
+   - Manual class: .dark-mode
+
+3. For custom dark mode logic, you can override variables:
+   .dark-mode {
+     .your-component {
+       @include theme($background-dark-mode, $foreground-dark-mode);
+     }
+   }
+*/

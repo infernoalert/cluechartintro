@@ -1,0 +1,26 @@
+<section class="w-full py-20 relative overflow-hidden">
+  <!-- Decorative background element -->
+  <div class="absolute top-0 left-0 w-full h-full bg-primary/5 -skew-y-3 origin-top-left scale-110 -z-10"></div>
+  <div class="max-w-[960px] mx-auto px-6 relative z-10">
+    <header class="text-center mb-16">
+      <span class="text-primary font-bold tracking-wider text-sm uppercase mb-2 block">The Solution</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">Boots on the Ground (Virtually)</h2>
+      <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl mx-auto">
+        Sarah stopped scrolling Zillow and started using ClueChart. Our specialized AI agents act as her digital consulting team, analyzing millions of data points instantly.
+      </p>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <article *ngFor="let agent of agents" 
+               [class]="'bg-white dark:bg-[#1a2633] rounded-2xl p-6 shadow-xl shadow-slate-200/50 dark:shadow-black/20 border-t-4 ' + agent.borderColor">
+        <div [ngClass]="['size-14', 'rounded-full', 'flex', 'items-center', 'justify-center', 'mb-6', agent.iconBgClass, agent.iconTextClass]">
+          <span class="material-symbols-outlined text-3xl">{{ agent.icon }}</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-3">{{ agent.title }}</h3>
+        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+          {{ agent.description }}
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+

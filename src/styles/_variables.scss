@@ -1,0 +1,116 @@
+// =============================================================================
+// DESIGN SYSTEM VARIABLES
+// =============================================================================
+
+// -----------------------------------------------------------------------------
+// COLOR PALETTE
+// -----------------------------------------------------------------------------
+
+// Primary Accent Color
+$primary-blue: #194569;
+
+// Background Colors
+$background-light: #f8f7f5;
+$background-dark: #181411;
+
+// Foreground/Text Colors
+$foreground-light: #181411;
+$foreground-dark: #f8f7f5;
+
+// Subtle Background
+$subtle-background: #27211b;
+
+// Border Color
+$border: #3a3027;
+
+// -----------------------------------------------------------------------------
+// BUTTON COLORS
+// -----------------------------------------------------------------------------
+
+// Blue Button Colors
+$blue-button-bg: #138aec;
+$blue-button-bg-hover: rgba(19, 138, 236, 0.9);
+$blue-button-text: #ffffff;
+
+// Gray Button Colors (Light Mode)
+$gray-button-bg: #f1f5f9;
+$gray-button-bg-hover: #e2e8f0;
+$gray-button-text: #0d151b;
+$gray-button-border: #e2e8f0;
+
+// Gray Button Colors (Dark Mode)
+$gray-button-bg-dark: #1e293b;
+$gray-button-bg-hover-dark: #334155;
+$gray-button-text-dark: #ffffff;
+$gray-button-border-dark: #334155;
+
+// -----------------------------------------------------------------------------
+// THEME VARIABLES (for light/dark mode switching)
+// -----------------------------------------------------------------------------
+
+// Default theme variables (can be overridden for dark mode)
+$background: $background-light;
+$foreground: $foreground-light;
+
+// Dark mode theme variables
+$background-dark-mode: $background-dark;
+$foreground-dark-mode: $foreground-dark;
+
+// -----------------------------------------------------------------------------
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
+
+// Font Family
+$font-family-primary: 'Manrope', sans-serif;
+
+// Font Weights
+$font-weight-regular: 400;    // Body text, paragraphs, descriptions
+$font-weight-medium: 500;     // Sub-headings, navigation links
+$font-weight-semibold: 600;   // Bolded text within paragraphs
+$font-weight-bold: 700;       // Card titles, primary section sub-headings
+$font-weight-extrabold: 800;  // Main page headings (H1)
+$font-weight-black: 900;      // Use sparingly for maximum impact
+
+// -----------------------------------------------------------------------------
+// BORDER RADIUS
+// -----------------------------------------------------------------------------
+
+$border-radius-default: 0.5rem;  // 8px - Most elements like cards and input fields
+$border-radius-large: 0.75rem;   // 12px - Larger containers or hero section elements
+$border-radius-extra-large: 1rem; // 16px - Specific, prominent elements
+$border-radius-full: 9999px;     // Pill-shaped buttons and circular elements
+
+// -----------------------------------------------------------------------------
+// UTILITY MIXINS
+// -----------------------------------------------------------------------------
+
+// Mixin for easy theme switching
+@mixin theme($bg: $background, $fg: $foreground) {
+  background-color: $bg;
+  color: $fg;
+}
+
+// Mixin for text with reduced opacity
+@mixin text-secondary {
+  color: rgba($foreground, 0.8);
+}
+
+// Mixin for primary accent elements
+@mixin accent-element {
+  color: $primary-blue;
+}
+
+// Mixin for subtle background containers
+@mixin subtle-container {
+  background-color: $subtle-background;
+  border: 1px solid $border;
+  border-radius: $border-radius-default;
+}
+
+// -----------------------------------------------------------------------------
+// RESPONSIVE BREAKPOINTS (if needed)
+// -----------------------------------------------------------------------------
+
+$breakpoint-mobile: 768px;
+$breakpoint-tablet: 1024px;
+$breakpoint-desktop: 1200px;

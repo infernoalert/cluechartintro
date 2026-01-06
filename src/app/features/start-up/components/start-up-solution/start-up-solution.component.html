@@ -1,0 +1,42 @@
+<section class="py-16 md:py-24 px-4 md:px-10 bg-background-light dark:bg-background-dark">
+  <div class="max-w-5xl mx-auto">
+    <div class="flex flex-col md:flex-row gap-12 items-start">
+      <header class="flex-1 sticky top-24">
+        <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">The Solution</span>
+        <h2 class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-6 leading-tight">
+          Meet Your New <br/>Co-Founders
+        </h2>
+        <p class="text-slate-600 dark:text-slate-400 text-lg mb-8 leading-relaxed">
+          ClueChart isn't just a chatbot that replies when you type. It's a proactive team of specialized AI agents working together on your data.
+        </p>
+        <button class="flex items-center gap-2 text-primary font-bold hover:gap-3 transition-all">
+          See how they work <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
+      </header>
+      <div class="flex-1 flex flex-col gap-6 w-full">
+        <article *ngFor="let agent of agents" 
+                 class="group bg-white dark:bg-slate-800 p-6 md:p-8 rounded-xl border border-slate-200 dark:border-slate-700 shadow-sm hover:border-primary/50 transition-colors">
+          <div class="flex items-start justify-between mb-4">
+            <div class="flex items-center gap-3">
+              <div [ngClass]="['size-10', 'rounded-full', 'flex', 'items-center', 'justify-center', agent.iconBgClass]">
+                <span [ngClass]="['material-symbols-outlined', agent.iconTextClass]">{{ agent.icon }}</span>
+              </div>
+              <div>
+                <h3 class="font-bold text-lg text-slate-900 dark:text-white">{{ agent.title }}</h3>
+                <p class="text-xs text-slate-500 font-mono">ROLE: {{ agent.role }}</p>
+              </div>
+            </div>
+            <div class="px-2 py-1 bg-green-100 dark:bg-green-900/20 text-green-700 dark:text-green-400 text-xs font-bold rounded">ONLINE</div>
+          </div>
+          <div [class]="'bg-slate-50 dark:bg-slate-900/50 p-4 rounded-lg mb-4 border-l-4 ' + agent.quoteBorderColor">
+            <p class="italic text-slate-600 dark:text-slate-400 text-sm">"{{ agent.quote }}"</p>
+          </div>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">
+            {{ agent.description }}
+          </p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+

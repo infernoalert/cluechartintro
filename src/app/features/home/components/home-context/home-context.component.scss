@@ -1,0 +1,42 @@
+@use '../../../../../styles/variables' as *;
+
+:host {
+  h2 {
+    color: white !important;
+  }
+  
+  // Ensure h3 elements have proper colors and alignment
+  .flex.items-center {
+    display: flex;
+    align-items: center;
+    
+    h3 {
+      margin: 0;
+      line-height: 1.5;
+      flex-shrink: 0;
+    }
+    
+    .material-symbols-outlined {
+      flex-shrink: 0;
+    }
+  }
+  
+  // First card - red h3
+  .rounded-2xl:first-of-type {
+    .flex.items-center {
+      h3.text-red-400 {
+        color: #f87171 !important; // red-400
+      }
+    }
+  }
+  
+  // Second card - blue (primary) h3
+  .rounded-2xl:last-of-type {
+    .flex.items-center {
+      h3.text-primary {
+        color: #138aec !important; // primary color
+      }
+    }
+  }
+}
+

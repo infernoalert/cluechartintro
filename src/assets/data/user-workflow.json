@@ -1,0 +1,5 @@
+{
+    "id": "user-workflow",
+    "title": "User Workflow Sequence",
+    "content": "sequenceDiagram\n    participant User\n    participant System\n    participant Administrator\n    participant Coordinator\n\n    User->>System: 1. Selects Agent\n    activate System\n    System-->>System: 2. Creates Playbook\n    deactivate System\n\n    User->>Administrator: 3. Starts Chat\n    activate Administrator\n\n    Administrator->>Coordinator: 4. Delivers Playbook & Chat Results\n    deactivate Administrator"
+  }

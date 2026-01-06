@@ -1,0 +1,241 @@
+/* You can add global styles to this file, and also import other style files */
+
+@use 'sass:color';
+@use 'styles/variables' as *;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+// =============================================================================
+// GLOBAL STYLES
+// =============================================================================
+
+// Material Symbols styling
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES (CSS Variables)
+// =============================================================================
+
+:root {
+  // Blue Button Colors
+  --blue-button-bg: #{$blue-button-bg};
+  --blue-button-bg-hover: #{$blue-button-bg-hover};
+  --blue-button-text: #{$blue-button-text};
+  
+  // Gray Button Colors (Light Mode)
+  --gray-button-bg: #{$gray-button-bg};
+  --gray-button-bg-hover: #{$gray-button-bg-hover};
+  --gray-button-text: #{$gray-button-text};
+  --gray-button-border: #{$gray-button-border};
+  
+  // Gray Button Colors (Dark Mode)
+  --gray-button-bg-dark: #{$gray-button-bg-dark};
+  --gray-button-bg-hover-dark: #{$gray-button-bg-hover-dark};
+  --gray-button-text-dark: #{$gray-button-text-dark};
+  --gray-button-border-dark: #{$gray-button-border-dark};
+}
+
+// Dark mode CSS variables
+.dark-mode,
+body.dark {
+  --gray-button-bg: var(--gray-button-bg-dark);
+  --gray-button-bg-hover: var(--gray-button-bg-hover-dark);
+  --gray-button-text: var(--gray-button-text-dark);
+  --gray-button-border: var(--gray-button-border-dark);
+}
+
+body {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-regular;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  @include theme($background, $foreground);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+// =============================================================================
+// TYPOGRAPHY STYLES
+// =============================================================================
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-extrabold;
+  line-height: 1.2;
+  margin: 0 0 1rem 0;
+  color: $foreground;
+}
+
+h1 {
+  font-weight: $font-weight-extrabold;
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-weight: $font-weight-bold;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: $font-weight-bold;
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-weight: $font-weight-semibold;
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-weight: $font-weight-medium;
+  font-size: 1.125rem;
+}
+
+h6 {
+  font-weight: $font-weight-medium;
+  font-size: 1rem;
+}
+
+p {
+  margin: 0 0 1rem 0;
+  color: $foreground;
+  
+  &.secondary {
+    @include text-secondary;
+  }
+}
+
+// =============================================================================
+// UTILITY CLASSES
+// =============================================================================
+
+.text-primary {
+  color: $primary-blue;
+}
+
+.text-secondary {
+  @include text-secondary;
+}
+
+.bg-subtle {
+  background-color: $subtle-background;
+}
+
+.border-default {
+  border: 1px solid $border;
+  border-radius: $border-radius-default;
+}
+
+.border-large {
+  border: 1px solid $border;
+  border-radius: $border-radius-large;
+}
+
+.border-extra-large {
+  border: 1px solid $border;
+  border-radius: $border-radius-extra-large;
+}
+
+.border-pill {
+  border-radius: $border-radius-full;
+}
+
+// =============================================================================
+// COMPONENT BASE STYLES
+// =============================================================================
+
+.card {
+  @include subtle-container;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.button {
+  font-family: $font-family-primary;
+  font-weight: $font-weight-medium;
+  border: none;
+  border-radius: $border-radius-default;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &.primary {
+    background-color: $primary-blue;
+    color: $background-light;
+    
+    &:hover {
+      background-color: color.adjust($primary-blue, $lightness: -10%);
+      transform: translateY(-1px);
+    }
+  }
+  
+  &.secondary {
+    background-color: transparent;
+    color: $foreground;
+    border: 1px solid $border;
+    
+    &:hover {
+      background-color: $subtle-background;
+    }
+  }
+  
+  &.pill {
+    border-radius: $border-radius-full;
+  }
+}
+
+// =============================================================================
+// DARK MODE SUPPORT
+// =============================================================================
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --gray-button-bg: var(--gray-button-bg-dark);
+    --gray-button-bg-hover: var(--gray-button-bg-hover-dark);
+    --gray-button-text: var(--gray-button-text-dark);
+    --gray-button-border: var(--gray-button-border-dark);
+  }
+  
+  body {
+    @include theme($background-dark-mode, $foreground-dark-mode);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: $foreground-dark;
+  }
+  
+  p {
+    color: $foreground-dark;
+  }
+}
+
+// Manual dark mode class
+.dark-mode {
+  body {
+    @include theme($background-dark-mode, $foreground-dark-mode);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: $foreground-dark;
+  }
+  
+  p {
+    color: $foreground-dark;
+  }
+}

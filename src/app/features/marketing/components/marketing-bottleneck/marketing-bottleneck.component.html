@@ -1,0 +1,28 @@
+<section class="py-20 bg-white dark:bg-background-dark">
+  <div class="max-w-[960px] mx-auto px-4 md:px-10">
+    <div class="flex flex-col gap-10">
+      <header class="text-center max-w-2xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold leading-tight mb-4 text-slate-900 dark:text-white">The Marketer's Burnout Loop</h2>
+        <p class="text-slate-600 dark:text-slate-400 text-lg">
+          Modern marketing requires analyzing millions of data points before a single creative idea is pitched. Here is why the old way is broken:
+        </p>
+      </header>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <article 
+          *ngFor="let card of cards" 
+          class="group flex flex-col gap-4 p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900/50 hover:shadow-lg transition-shadow">
+          <div [ngClass]="['size-12', 'rounded-lg', card.iconBgClass, 'flex', 'items-center', 'justify-center', card.iconTextClass]">
+            <span class="material-symbols-outlined text-3xl">{{ card.icon }}</span>
+          </div>
+          <div>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">{{ card.title }}</h3>
+            <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+              {{ card.description }}
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+

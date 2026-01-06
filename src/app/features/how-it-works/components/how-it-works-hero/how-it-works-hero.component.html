@@ -1,0 +1,21 @@
+<!-- Hero Section -->
+<section class="relative pt-16 pb-24 lg:pt-24 lg:pb-32 px-4 md:px-8 lg:px-12 overflow-hidden">
+  <div class="absolute inset-0 -z-10 bg-[radial-gradient(45%_40%_at_50%_60%,rgba(19,138,236,0.1),transparent)]"></div>
+  <div class="mx-auto max-w-4xl text-center flex flex-col items-center">
+    <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-5xl lg:text-6xl mb-6">
+      The Engine Behind <br class="hidden sm:block"/> the Orchestration.
+    </h1>
+    <p class="max-w-2xl text-lg text-slate-500 dark:text-slate-400 mb-10 leading-relaxed">
+      Most AI fails because it lacks a shared brain. See how ClueChart bridges the gap between your vague intuition and the agents' structured execution.
+    </p>
+    <!-- Video Player Component -->
+    <div class="w-full relative rounded-2xl shadow-2xl overflow-hidden ring-1 ring-slate-900/5 bg-slate-900">
+      <app-youtube-video 
+        [videoId]="videoId"
+        [width]="1280"
+        [height]="720">
+      </app-youtube-video>
+    </div>
+  </div>
+</section>
+

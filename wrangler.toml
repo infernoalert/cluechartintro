@@ -1,0 +1,9 @@
+name = "webcluechart"
+compatibility_date = "2025-01-04"
+
+[[routes]]
+pattern = "web.cluechart.com"
+custom_domain = true
+
+[assets]
+directory = "./dist/cluechartstatic/browser"

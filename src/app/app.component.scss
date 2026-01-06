@@ -1,0 +1,21 @@
+@use '../styles/variables' as *;
+
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: $background-light;
+  color: $foreground-light;
+  font-family: $font-family-primary;
+  
+  .dark & {
+    background-color: $background-dark;
+    color: $foreground-dark;
+  }
+}
+
+.main-content {
+  flex: 1;
+  width: 100%;
+  position: relative;
+}

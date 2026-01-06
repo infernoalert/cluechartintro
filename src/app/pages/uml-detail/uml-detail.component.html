@@ -1,0 +1,22 @@
+<div class="min-h-screen bg-slate-50 dark:bg-background-dark p-4 md:p-8">
+  <div class="max-w-7xl mx-auto">
+    <header class="text-center mb-8 md:mb-12">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-text-dark dark:text-white mb-4">UML Diagram Viewer</h1>
+      <p class="text-base md:text-lg lg:text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Explore and interact with our collection of UML diagrams</p>
+    </header>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-[350px_1fr] gap-4 md:gap-6 lg:gap-8 min-h-[600px]">
+      <div class="h-fit lg:sticky lg:top-4">
+        <app-diagram-list 
+          [diagrams]="diagrams"
+          (diagramSelected)="onDiagramSelected($event)">
+        </app-diagram-list>
+      </div>
+      <div class="min-h-[500px]">
+        <app-uml-viewer 
+          [umlContent]="selectedDiagramContent">
+        </app-uml-viewer>
+      </div>
+    </div>
+  </div>
+</div>

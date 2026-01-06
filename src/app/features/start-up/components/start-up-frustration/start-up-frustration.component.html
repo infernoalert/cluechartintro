@@ -1,0 +1,24 @@
+<section class="py-16 md:py-24 px-4 md:px-10 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+  <div class="max-w-5xl mx-auto">
+    <header class="text-center mb-16">
+      <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">The Frustration</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">The Solo Founder's Trap</h2>
+      <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+        Great ideas often die in the execution gap. Frank has the vision, but he's missing the team to execute it effectively.
+      </p>
+    </header>
+    <div class="grid md:grid-cols-3 gap-8">
+      <article *ngFor="let card of cards" 
+               class="bg-background-light dark:bg-background-dark p-8 rounded-xl border border-slate-200 dark:border-slate-700 flex flex-col gap-4 hover:shadow-lg transition-shadow">
+        <div class="size-12 bg-primary/10 rounded-lg flex items-center justify-center text-primary mb-2">
+          <span class="material-symbols-outlined text-3xl">{{ card.icon }}</span>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white">{{ card.title }}</h3>
+        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
+          {{ card.description }}
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+

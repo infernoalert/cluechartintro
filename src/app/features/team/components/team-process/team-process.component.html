@@ -1,0 +1,142 @@
+<section class="w-full bg-slate-50 dark:bg-background-dark py-20 relative overflow-hidden">
+  <div class="absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-slate-200 dark:via-slate-800 to-transparent hidden lg:block"></div>
+  <div class="flex justify-center w-full relative z-10">
+    <div class="flex flex-col max-w-[1000px] flex-1 px-4 md:px-8 lg:px-12">
+      <div class="text-center mb-16">
+        <span class="text-primary font-bold tracking-wider text-sm uppercase">The Orchestration Process</span>
+        <h2 class="text-text-dark dark:text-white text-3xl md:text-4xl font-bold mt-2">How the Work Gets Done</h2>
+      </div>
+      <div class="flex flex-col gap-24">
+        <!-- Step 1: Assembly -->
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="w-full lg:w-1/2 flex flex-col lg:items-end lg:text-right gap-4">
+            <div class="inline-flex lg:ml-auto items-center justify-center px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-primary rounded-full text-xs font-bold uppercase tracking-wide">
+              Step 1: Assembly
+            </div>
+            <h3 class="text-2xl font-bold text-text-dark dark:text-white">The Architect's Choice</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-md">
+              The first step is selecting your specialized workforce. Choose from our library of experts or build your own custom agents. As you assemble them, the Agents prepare to execute.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <div 
+              (click)="openVideo(video1Id, 'Selecting Agents from the Library')"
+              class="relative rounded-xl overflow-hidden shadow-2xl bg-white dark:bg-[#101a22] border border-slate-200 dark:border-slate-800 aspect-video cursor-pointer group hover:shadow-3xl transition-shadow">
+              <!-- Video Thumbnail/Preview -->
+              <div class="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-primary/20 flex items-center justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="size-20 rounded-full bg-primary text-white flex items-center justify-center shadow-lg shadow-primary/30 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-5xl">play_arrow</span>
+                  </div>
+                  <span class="text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Click to Play</span>
+                </div>
+              </div>
+              <!-- Video Title Overlay -->
+              <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-4 z-20 backdrop-blur-sm">
+                <p class="text-white text-sm font-medium">Selecting Agents from the Library</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: The Briefing -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+          <div class="w-full lg:w-1/2 flex flex-col lg:items-start lg:text-left gap-4">
+            <div class="inline-flex lg:mr-auto items-center justify-center px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rounded-full text-xs font-bold uppercase tracking-wide">
+              Step 2: The Briefing
+            </div>
+            <h3 class="text-2xl font-bold text-text-dark dark:text-white">The Consultant Interview</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-md">
+              Friction happens when instructions are vague. Our 'Consultant' agent interviews you to refine the mission, ensuring the team has a process of clarity before they start.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <div 
+              (click)="openVideo(video2Id, 'The Consultant Agent Q&A Flow')"
+              class="relative rounded-xl overflow-hidden shadow-2xl bg-white dark:bg-[#101a22] border border-slate-200 dark:border-slate-800 aspect-video cursor-pointer group hover:shadow-3xl transition-shadow">
+              <!-- Video Thumbnail/Preview -->
+              <div class="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-amber-600/20 flex items-center justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="size-20 rounded-full bg-amber-500 text-white flex items-center justify-center shadow-lg shadow-amber-500/30 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-5xl">play_arrow</span>
+                  </div>
+                  <span class="text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Click to Play</span>
+                </div>
+              </div>
+              <!-- Video Title Overlay -->
+              <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-4 z-20 backdrop-blur-sm">
+                <p class="text-white text-sm font-medium">The Consultant Agent Q&amp;A Flow</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 3: Private Context -->
+        <div class="flex flex-col lg:flex-row items-center gap-12">
+          <div class="w-full lg:w-1/2 flex flex-col lg:items-end lg:text-right gap-4">
+            <div class="inline-flex lg:ml-auto items-center justify-center px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-600 dark:text-red-400 rounded-full text-xs font-bold uppercase tracking-wide">
+              Step 3: Private Context
+            </div>
+            <h3 class="text-2xl font-bold text-text-dark dark:text-white">Reference Assets &amp; Knowledge</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-md">
+              We have the Team, but they need your data. Upload PDFs, spreadsheets, or docs. The system reads specific constraints and applies them to every agent's output securely.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <div class="relative rounded-xl overflow-hidden shadow-2xl bg-white dark:bg-[#101a22] border border-slate-200 dark:border-slate-800 aspect-video flex items-center justify-center p-8">
+              <div class="relative w-full max-w-[200px] aspect-[3/4] bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 shadow-xl rounded-lg flex flex-col items-center justify-center gap-4 p-4 animate-pulse">
+                <span class="material-symbols-outlined text-6xl text-red-500">picture_as_pdf</span>
+                <div class="h-2 w-full bg-slate-200 dark:bg-slate-700 rounded overflow-hidden">
+                  <div class="h-full bg-primary w-2/3"></div>
+                </div>
+                <span class="text-xs font-mono text-slate-500">Reading Context...</span>
+                <div class="absolute top-0 left-0 w-full h-1 bg-primary/50 shadow-[0_0_15px_rgba(19,138,236,0.5)] scan-animation"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4: The Workspace -->
+        <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+          <div class="w-full lg:w-1/2 flex flex-col lg:items-start lg:text-left gap-4">
+            <div class="inline-flex lg:mr-auto items-center justify-center px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-xs font-bold uppercase tracking-wide">
+              Step 4: The Workspace
+            </div>
+            <h3 class="text-2xl font-bold text-text-dark dark:text-white">The Co-Working Space</h3>
+            <p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-md">
+              This is where the work gets done. Watch agents collaborate, intervene when needed, and see how the collective intelligence gets smarter instantly as the project evolves.
+            </p>
+          </div>
+          <div class="w-full lg:w-1/2">
+            <div 
+              (click)="openVideo(video3Id, 'The Chat/Workspace in Action')"
+              class="relative rounded-xl overflow-hidden shadow-2xl bg-white dark:bg-[#101a22] border border-slate-200 dark:border-slate-800 aspect-video cursor-pointer group hover:shadow-3xl transition-shadow">
+              <!-- Video Thumbnail/Preview -->
+              <div class="absolute inset-0 bg-gradient-to-br from-green-500/20 to-green-600/20 flex items-center justify-center">
+                <div class="flex flex-col items-center gap-3">
+                  <div class="size-20 rounded-full bg-green-500 text-white flex items-center justify-center shadow-lg shadow-green-500/30 group-hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined text-5xl">play_arrow</span>
+                  </div>
+                  <span class="text-sm font-bold text-slate-600 dark:text-slate-300 uppercase tracking-widest">Click to Play</span>
+                </div>
+              </div>
+              <!-- Video Title Overlay -->
+              <div class="absolute bottom-0 left-0 right-0 bg-black/50 p-4 z-20 backdrop-blur-sm">
+                <p class="text-white text-sm font-medium">The Chat/Workspace in Action</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Video Modal -->
+  <app-video-modal
+    [isOpen]="isModalOpen"
+    [videoId]="currentVideoId"
+    [title]="currentVideoTitle"
+    (close)="closeVideo()">
+  </app-video-modal>
+</section>
+

@@ -1,0 +1,71 @@
+<section class="w-full flex flex-col items-center mt-12 mb-16">
+  <div class="max-w-[1024px] w-full rounded-xl bg-slate-100 dark:bg-slate-800/50 p-6 md:p-10 text-center">
+    <h3 class="text-xl font-bold text-[#0d151b] dark:text-white mb-2">Need a custom enterprise solution?</h3>
+    <p class="text-slate-600 dark:text-slate-400 mb-6">We offer dedicated instances, SSO, and SLA support for large organizations.</p>
+    
+    <!-- Email Form -->
+    <form (ngSubmit)="sendEmail()" class="flex flex-col gap-4 max-w-2xl mx-auto mt-6">
+      <div class="flex flex-col gap-1">
+        <input 
+          type="email" 
+          [(ngModel)]="email"
+          name="email"
+          (input)="onEmailInput()"
+          placeholder="your.email@example.com" 
+          [class.border-red-500]="emailError"
+          class="w-full rounded-lg h-12 px-4 bg-white dark:bg-[#1c2936] border border-gray-200 dark:border-gray-600 text-[#0d151b] dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
+        />
+        <p *ngIf="emailError" class="text-red-500 text-sm px-1 text-left">{{ emailError }}</p>
+      </div>
+      <div class="flex flex-col gap-1">
+        <textarea 
+          [(ngModel)]="message"
+          name="message"
+          (input)="onMessageInput()"
+          placeholder="Tell us about your enterprise needs..."
+          rows="6"
+          [class.border-red-500]="messageError"
+          class="w-full rounded-lg px-4 py-3 bg-white dark:bg-[#1c2936] border border-gray-200 dark:border-gray-600 text-[#0d151b] dark:text-white text-base focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-y min-h-[120px]"
+        ></textarea>
+        <p *ngIf="messageError" class="text-red-500 text-sm px-1 text-left">{{ messageError }}</p>
+      </div>
+      <button 
+        type="submit"
+        [disabled]="isSubmitting"
+        class="w-full md:w-auto mx-auto flex items-center justify-center rounded-lg h-12 px-8 bg-primary hover:bg-primary/90 disabled:opacity-50 disabled:cursor-not-allowed text-white text-base font-bold transition-all shadow-md shadow-primary/20">
+        <span *ngIf="!isSubmitting">Send to my email</span>
+        <span *ngIf="isSubmitting">Sending...</span>
+      </button>
+    </form>
+  </div>
+</section>
+
+<!-- Thank You Modal -->
+<div 
+  *ngIf="showThankYouModal" 
+  class="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+  (click)="closeThankYouModal()">
+  <div 
+    class="modal-content relative w-full max-w-md bg-white dark:bg-slate-900 rounded-xl shadow-2xl overflow-hidden p-8"
+    (click)="$event.stopPropagation()">
+    <!-- Close Button -->
+    <button 
+      (click)="closeThankYouModal()"
+      class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-slate-400 hover:text-slate-600 dark:hover:text-slate-200 transition-colors"
+      aria-label="Close modal">
+      <span class="material-symbols-outlined text-2xl">close</span>
+    </button>
+    
+    <!-- Thank You Message -->
+    <div class="flex flex-col items-center text-center gap-4">
+      <div class="size-16 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center mb-2">
+        <span class="material-symbols-outlined text-4xl text-green-500">check_circle</span>
+      </div>
+      <h3 class="text-2xl font-bold text-[#0d151b] dark:text-white">Thank You!</h3>
+      <p class="text-slate-600 dark:text-slate-400 text-lg">
+        We've received your message and will be in touch soon.
+      </p>
+    </div>
+  </div>
+</div>
+

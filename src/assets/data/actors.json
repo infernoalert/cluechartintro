@@ -1,0 +1,5 @@
+{
+  "id": "actors",
+  "title": "Updated System Actors",
+  "content": "graph TD\n    subgraph System\n        A[\" \"]\n    end\n\n    User[\"👤 User\"]\n    Agents[\"🤖 Agents\"]\n\n    User --> System\n    Agents --> System\n\n    SystemNote[\"A fixed application with rule-based, if-then style logic.\"]\n    UserNote[\"A person defined by their specialty (e.g., finance, legal).\"]\n    AgentsNote[\"AI entities specialized in a single topic, powered by LLMs like Gemini, OpenAI, or Grok.\"]\n\n    A -.-> SystemNote\n    User -.-> UserNote\n    Agents -.-> AgentsNote\n\n    style A fill:none,stroke:none\n    style SystemNote fill:#f9f9f9,stroke:#333\n    style UserNote fill:#e1f5fe,stroke:#333\n    style AgentsNote fill:#e8f5e9,stroke:#333"
+}

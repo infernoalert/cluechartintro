@@ -1,0 +1,89 @@
+<section class="py-24 px-4 md:px-10 bg-white dark:bg-background-dark">
+  <div class="max-w-[1280px] mx-auto">
+    <div class="flex flex-col lg:flex-row gap-16 items-start">
+      <!-- Diagram Visual (Left Side) -->
+      <div class="flex-1 w-full lg:sticky lg:top-24">
+        <div class="bg-slate-50 dark:bg-[#16222d] border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-inner">
+          <header class="text-center mb-6">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">System Architecture</span>
+          </header>
+          <!-- UML-like CSS Diagram -->
+          <div class="flex flex-col gap-6 relative">
+            <!-- User Trigger -->
+            <div class="flex justify-center">
+              <div class="bg-white dark:bg-[#1e2e3d] border-2 border-primary rounded-lg p-4 w-48 shadow-lg z-10 flex items-center gap-3">
+                <span class="material-symbols-outlined text-primary">touch_app</span>
+                <div class="text-sm font-bold dark:text-white">User Input</div>
+              </div>
+            </div>
+            <!-- Vertical Line -->
+            <div class="absolute left-1/2 top-12 h-16 w-0.5 bg-slate-300 dark:bg-slate-600 -translate-x-1/2"></div>
+            <!-- Central Hub -->
+            <div class="flex justify-center mt-6">
+              <div class="bg-primary text-white rounded-lg p-4 w-56 shadow-lg z-10 text-center relative">
+                <div class="text-sm font-bold">Orchestrator Agent</div>
+                <div class="text-xs opacity-80 mt-1">Parses Intent</div>
+              </div>
+            </div>
+            <!-- Branching Lines -->
+            <div class="flex justify-center relative h-12 mt-[-10px] -z-0">
+              <div class="w-[80%] border-x border-b border-slate-300 dark:border-slate-600 rounded-b-2xl h-full absolute top-0"></div>
+              <div class="h-full w-0.5 bg-slate-300 dark:bg-slate-600"></div>
+            </div>
+            <!-- Child Agents -->
+            <div class="grid grid-cols-3 gap-4 text-center mt-2">
+              <div class="flex flex-col items-center">
+                <div class="bg-white dark:bg-[#1e2e3d] border border-slate-300 dark:border-slate-600 rounded p-3 text-xs font-bold shadow-sm w-full dark:text-slate-300">Competitor Monitor</div>
+                <div class="h-4 w-0.5 bg-slate-300 dark:bg-slate-600"></div>
+                <div class="bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-[10px] rounded px-2 py-1">New Pricing Found</div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="bg-white dark:bg-[#1e2e3d] border border-slate-300 dark:border-slate-600 rounded p-3 text-xs font-bold shadow-sm w-full dark:text-slate-300">Trend Watcher</div>
+                <div class="h-4 w-0.5 bg-slate-300 dark:bg-slate-600"></div>
+                <div class="bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-[10px] rounded px-2 py-1">Social Spike</div>
+              </div>
+              <div class="flex flex-col items-center">
+                <div class="bg-white dark:bg-[#1e2e3d] border border-slate-300 dark:border-slate-600 rounded p-3 text-xs font-bold shadow-sm w-full dark:text-slate-300">Audience Sim</div>
+                <div class="h-4 w-0.5 bg-slate-300 dark:bg-slate-600"></div>
+                <div class="bg-emerald-50 dark:bg-emerald-900/20 text-emerald-700 dark:text-emerald-400 text-[10px] rounded px-2 py-1">Sentiment Shift</div>
+              </div>
+            </div>
+            <!-- Bottom Convergence -->
+            <div class="flex justify-center mt-4">
+              <div class="bg-white dark:bg-[#1e2e3d] border-2 border-emerald-500 rounded-lg p-4 w-64 shadow-lg flex items-center gap-3">
+                <span class="material-symbols-outlined text-emerald-500">campaign</span>
+                <div class="flex flex-col text-left">
+                  <div class="text-sm font-bold dark:text-white">Strategy Update</div>
+                  <div class="text-xs text-slate-500">Auto-Generated Campaign Brief</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Text Content (Right Side) -->
+      <div class="flex-1 flex flex-col gap-8 justify-center">
+        <div>
+          <h2 class="text-3xl font-black text-slate-900 dark:text-white mb-4">The "Ripple Effect" in Marketing</h2>
+          <p class="text-slate-600 dark:text-slate-300 text-lg leading-relaxed">
+            In standard chat, if you change your target audience, nothing else updates. In ClueChart, one change ripples through the entire system, updating competitor analysis, messaging, and ad spend allocation instantly.
+          </p>
+        </div>
+        <div class="flex flex-col gap-6">
+          <article *ngFor="let step of steps" class="flex gap-4">
+            <div class="mt-1 size-10 rounded-full bg-blue-100 dark:bg-blue-900/40 flex items-center justify-center text-primary shrink-0">
+              <span class="material-symbols-outlined">{{ step.icon }}</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-bold text-slate-900 dark:text-white">{{ step.title }}</h3>
+              <p class="text-slate-500 dark:text-slate-400 text-sm mt-1">
+                {{ step.description }}
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,28 @@
+<section class="w-full bg-white dark:bg-[#15202b] py-20 border-y border-slate-100 dark:border-slate-800">
+  <div class="max-w-[960px] mx-auto px-6">
+    <header class="mb-12">
+      <h2 class="text-3xl font-bold text-slate-900 dark:text-white mb-4">The "Brick and Mortar" Gamble</h2>
+      <p class="text-slate-600 dark:text-slate-400 text-lg max-w-3xl">
+        For a local business, a bad lease is a death sentence. Without data, passionate entrepreneurs like Sarah are often betting their life savings on a hunch.
+      </p>
+    </header>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <article *ngFor="let card of cards" 
+               [ngClass]="{
+                 'flex gap-4 items-start p-6 rounded-xl bg-background-light dark:bg-slate-800/50': true,
+                 'border border-slate-200 dark:border-slate-700': card.hasBorder
+               }">
+        <div [ngClass]="['size-10', 'rounded-lg', 'flex', 'items-center', 'justify-center', 'shrink-0', card.iconBgClass, card.iconTextClass]">
+          <span class="material-symbols-outlined">{{ card.icon }}</span>
+        </div>
+        <div>
+          <h3 class="font-bold text-lg text-slate-900 dark:text-white mb-2">{{ card.title }}</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+            {{ card.description }}
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+

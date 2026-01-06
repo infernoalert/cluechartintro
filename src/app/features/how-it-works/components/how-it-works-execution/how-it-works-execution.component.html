@@ -1,0 +1,62 @@
+<!-- Section 3: Human-in-the-Loop -->
+<section class="py-20 bg-white dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
+  <div class="mx-auto max-w-7xl px-4 md:px-8 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div>
+        <span class="text-primary font-bold tracking-wider text-sm uppercase mb-2 block">Workflow</span>
+        <h2 class="text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-4xl mb-6">
+          3. Execution with Oversight
+        </h2>
+        <p class="text-lg text-slate-500 dark:text-slate-400 mb-8">
+          AI shouldn't be a black box. ClueChart keeps you in the driver's seat during the critical phases of production.
+        </p>
+        <div class="space-y-6">
+          <div class="flex gap-4">
+            <div class="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-white">
+              <span class="material-symbols-outlined">edit_document</span>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900 dark:text-white">The Draft Phase</h4>
+              <p class="mt-1 text-slate-500 dark:text-slate-400">Agents generate a first draft based on the Guidelines. You see the work appear in real-time, grouped by deliverable.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-900 dark:bg-slate-800 dark:text-white">
+              <span class="material-symbols-outlined">tune</span>
+            </div>
+            <div>
+              <h4 class="text-lg font-bold text-slate-900 dark:text-white">The Fine-Tuning Area</h4>
+              <ul class="mt-2 space-y-2 text-sm text-slate-500 dark:text-slate-400">
+                <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-primary"></span> <strong>Edit Directly:</strong> Tweaking the content inline.</li>
+                <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-primary"></span> <strong>Version Control:</strong> Rollback to previous agent iterations.</li>
+                <li class="flex items-center gap-2"><span class="size-1.5 rounded-full bg-primary"></span> <strong>Approval:</strong> Sign off on sections to lock them.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative lg:h-full min-h-[400px] w-full bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-inner border border-slate-200 dark:border-slate-700">
+        <div class="absolute inset-0 bg-cover bg-center" data-alt="Abstract interface showing a document editor with version control sidebar" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBVT2_60q83JcwrCyXx1mjaa565CBeGhk1kzm5DipL3KzA3TM4VDEvK4lM_6bH53xyrBeE55HHIj6NE7h7vCamcXEV8DPliVJtv-TrmfrRsOBGNyUZjQZbbAOAW34rEGaVhdHp96-peQzEO50uK7AtVfCQwgvsHcS01RjdPo9G0qmIv6dCOTbKvlUlu3wusopLVBfz4wXrXFI3NhvtcsbVyUysnelEGlujFmZDNGAwn0-B_d6aKaoU9IUyLo-5LU-TgPIxp7qI3hwEI"); opacity: 0.9;'></div>
+        <!-- Overlay for text readability if needed, though image choice should be subtle -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-slate-900/80 to-slate-900/20 flex items-center justify-center">
+          <div class="bg-white/10 backdrop-blur-md p-6 rounded-xl border border-white/20 text-white max-w-sm">
+            <div class="flex items-center gap-3 mb-3 border-b border-white/10 pb-3">
+              <span class="material-symbols-outlined text-green-400">check_circle</span>
+              <span class="font-bold">Ready for Review</span>
+            </div>
+            <div class="space-y-2 opacity-80 text-sm">
+              <div class="h-2 bg-white/40 rounded w-3/4"></div>
+              <div class="h-2 bg-white/40 rounded w-full"></div>
+              <div class="h-2 bg-white/40 rounded w-5/6"></div>
+            </div>
+            <div class="mt-4 flex gap-2">
+              <button class="px-3 py-1 bg-primary rounded text-xs font-bold">Approve</button>
+              <button class="px-3 py-1 bg-white/10 rounded text-xs font-bold">Regenerate</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,41 @@
+<section class="w-full bg-white dark:bg-[#15202b] py-16 md:py-24 border-y border-slate-100 dark:border-slate-800">
+  <div class="flex justify-center w-full">
+    <div class="flex flex-col max-w-[1200px] flex-1 px-4 md:px-8 lg:px-12">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="flex flex-col gap-2">
+          <span class="text-primary font-bold tracking-wider text-sm uppercase">The Talent Pool</span>
+          <h2 class="text-text-dark dark:text-white text-3xl md:text-4xl font-bold leading-tight tracking-tight">
+            The Agent Library
+          </h2>
+          <p class="text-slate-600 dark:text-slate-400 text-lg max-w-2xl">
+            Select specialized AI agents to form your department. Each expert is trained for specific outcomes.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary hover:text-white transition-colors">All</button>
+          <button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary hover:text-white transition-colors">Strategy</button>
+          <button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary hover:text-white transition-colors">Engineering</button>
+          <button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary hover:text-white transition-colors">Operations</button>
+          <button class="px-4 py-2 rounded-full bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-sm font-semibold hover:bg-primary hover:text-white transition-colors">Creative</button>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <app-agent-card
+          *ngFor="let agent of agents"
+          [title]="agent.title"
+          [description]="agent.description"
+          [icon]="agent.icon"
+          [category]="agent.category"
+          [iconColor]="agent.iconColor">
+        </app-agent-card>
+      </div>
+      <div class="mt-8 text-center">
+        <button class="inline-flex items-center gap-2 text-primary font-bold text-sm hover:underline">
+          <span>View All 50+ Agents</span>
+          <span class="material-symbols-outlined text-sm">arrow_forward</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+

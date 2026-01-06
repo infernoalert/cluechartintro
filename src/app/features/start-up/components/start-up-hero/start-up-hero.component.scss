@@ -1,0 +1,13 @@
+// Component-specific styles if needed
+// Most styling handled by Tailwind classes
+
+:host ::ng-deep {
+  .youtube-video-container {
+    margin: 0;
+    
+    .youtube-wrapper {
+      border-radius: 0.75rem; // rounded-xl
+    }
+  }
+}
+

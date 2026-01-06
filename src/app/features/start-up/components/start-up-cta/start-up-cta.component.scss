@@ -1,0 +1,16 @@
+// Component-specific styles if needed
+// Most styling handled by Tailwind classes
+
+:host {
+  --cta-text-white: #ffffff;
+  --cta-text-light-blue: #138aec;
+}
+
+.cta-heading-white {
+  color: var(--cta-text-white);
+}
+
+.cta-heading-light-blue {
+  color: var(--cta-text-light-blue);
+}
+

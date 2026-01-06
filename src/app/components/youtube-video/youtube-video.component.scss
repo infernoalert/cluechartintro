@@ -1,0 +1,38 @@
+@use '../../../styles/variables' as *;
+
+.youtube-video-container {
+  width: 100%;
+  margin: 2rem 0;
+  
+  .youtube-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; // 16:9 Aspect Ratio
+    height: 0;
+    overflow: hidden;
+    border-radius: $border-radius-default;
+    
+    youtube-player {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100% !important;
+      height: 100% !important;
+      display: block;
+
+      // CRITICAL: Force the inner iframe to fill the container
+      // Using ::ng-deep to penetrate Angular's view encapsulation
+      ::ng-deep {
+        iframe {
+          position: absolute !important;
+          top: 0 !important;
+          left: 0 !important;
+          width: 100% !important;
+          height: 100% !important;
+          border: none !important;
+        }
+      }
+    }
+  }
+}
+

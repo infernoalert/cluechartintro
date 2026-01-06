@@ -1,0 +1,47 @@
+<section class="py-16 md:py-24 px-4 md:px-10 bg-white dark:bg-slate-900 border-y border-slate-200 dark:border-slate-800">
+  <div class="max-w-6xl mx-auto">
+    <header class="text-center mb-12">
+      <span class="text-primary font-bold tracking-wider uppercase text-sm mb-2 block">The Architecture</span>
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-4">How The Agents Talk to Each Other</h2>
+      <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg">
+        Standard AI chats are linear conversations. ClueChart is a network. Agents collaborate in a shared workspace, supervised by you.
+      </p>
+    </header>
+    <!-- UML Viewer Component -->
+    <div class="relative w-full bg-slate-50 dark:bg-slate-800 rounded-xl border border-slate-200 dark:border-slate-700 p-8 min-h-[400px] mb-12 overflow-hidden">
+      <!-- Decorative background grid -->
+      <div class="absolute inset-0 opacity-10" 
+           [style.background-image]="'radial-gradient(#94a3b8 1px, transparent 1px)'" 
+           [style.background-size]="'20px 20px'"></div>
+      <!-- UML Viewer -->
+      <div class="relative z-10">
+        <app-uml-viewer [umlContent]="umlContent"></app-uml-viewer>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 gap-8">
+      <article class="flex gap-4">
+        <div class="mt-1 text-primary">
+          <span class="material-symbols-outlined">share_reviews</span>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Understanding the Flow: The Hub</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">
+            Unlike linear chats where context is lost, The Hub acts as a central memory store. Every agent reads from and writes to this source of truth, preventing hallucinations.
+          </p>
+        </div>
+      </article>
+      <article class="flex gap-4">
+        <div class="mt-1 text-primary">
+          <span class="material-symbols-outlined">sync_alt</span>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Horizontal Sharing</h3>
+          <p class="text-slate-600 dark:text-slate-400 text-sm">
+            Agents can request data from each other directly. The Marketing Agent can ask the Financial Agent for budget constraints before drafting a campaign.
+          </p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+

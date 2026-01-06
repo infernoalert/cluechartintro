@@ -14,16 +14,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have the 'cluechartstatic' title`, () => {
+  it(`should have the 'cluechartintro' title`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('cluechartstatic');
+    expect(app.title).toEqual('cluechartintro');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cluechartstatic');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, cluechartintro');
   });
 });

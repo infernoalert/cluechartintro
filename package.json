@@ -1,5 +1,5 @@
 {
-  "name": "cluechartstatic",
+  "name": "cluechartintro",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npm run build:prod && npx wrangler deploy",
-    "serve:ssr:cluechartstatic": "node dist/cluechartstatic/server/server.mjs",
+    "serve:ssr:cluechartintro": "node dist/cloudflare/server/server.mjs",
     "docs:build": "compodoc -p tsconfig.json -s",
     "docs:serve": "compodoc -p tsconfig.json -s -w"
   },

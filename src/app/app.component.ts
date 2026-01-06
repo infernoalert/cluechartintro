@@ -16,7 +16,7 @@ import { environment } from '../environments/environment';
   styleUrl: './app.component.scss'
 })
 export class AppComponent implements OnInit, OnDestroy {
-  title = 'cluechartstatic';
+  title = 'clueChart';
   private routerSubscription?: Subscription;
 
   constructor(

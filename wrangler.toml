@@ -1,9 +1,11 @@
 name = "webcluechart"
 compatibility_date = "2025-01-04"
 
+pages_build_output_dir = "dist/cloudflare/browser"
+
 [[routes]]
 pattern = "web.cluechart.com"
 custom_domain = true
 
 [assets]
-directory = "./dist/cluechartstatic/browser"
+directory = "./dist/cloudflare/browser"

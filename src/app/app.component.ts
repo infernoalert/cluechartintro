@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, RouterOutlet, NavigationEnd } from '@angular/router';
+import { Title, Meta } from '@angular/platform-browser';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { GoogleTagManagerService } from 'angular-google-tag-manager';
@@ -21,10 +22,19 @@ export class AppComponent implements OnInit, OnDestroy {
 
   constructor(
     private router: Router,
-    private gtmService: GoogleTagManagerService
+    private gtmService: GoogleTagManagerService,
+    private titleService: Title,
+    private metaService: Meta
   ) {}
 
   ngOnInit(): void {
+    // Set SEO title and description for Agentic Platform
+    this.titleService.setTitle('ClueChart - Agentic Platform for AI Workflows');
+    this.metaService.updateTag({ 
+      name: 'description', 
+      content: 'ClueChart is an agentic platform that orchestrates complex AI agent workflows. Build, deploy, and manage intelligent agents that work 24/7 to automate your business processes.' 
+    });
+
     // Initialize Hotjar
     Hotjar.init(parseInt(environment.hotjarSiteId), 6);
 

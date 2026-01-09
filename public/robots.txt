@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cluechart.com/sitemap.xml

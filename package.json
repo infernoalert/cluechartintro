@@ -4,14 +4,15 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
-    "build:prod": "ng build --configuration production",
+    "build": "node scripts/generate-sitemap.js && ng build",
+    "build:prod": "node scripts/generate-sitemap.js && ng build --configuration production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "deploy": "npm run build:prod && npx wrangler deploy",
     "serve:ssr:cluechartintro": "node dist/cluechartintro/server/server.mjs",
     "docs:build": "compodoc -p tsconfig.json -s",
-    "docs:serve": "compodoc -p tsconfig.json -s -w"
+    "docs:serve": "compodoc -p tsconfig.json -s -w",
+    "generate:sitemap": "node scripts/generate-sitemap.js"
   },
   "private": true,
   "dependencies": {

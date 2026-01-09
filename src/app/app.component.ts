@@ -35,6 +35,18 @@ export class AppComponent implements OnInit, OnDestroy {
       content: 'ClueChart is an agentic platform that orchestrates complex AI agent workflows. Build, deploy, and manage intelligent agents that work 24/7 to automate your business processes.' 
     });
 
+    // Define the Image URL
+    const socialImage = 'https://www.cluechart.com/assets/social-preview.png';
+
+    // Update Open Graph Image (Facebook/LinkedIn)
+    this.metaService.updateTag({ property: 'og:image', content: socialImage });
+    this.metaService.updateTag({ property: 'og:url', content: 'https://www.cluechart.com/' });
+    this.metaService.updateTag({ property: 'og:type', content: 'website' });
+
+    // Update Twitter Image
+    this.metaService.updateTag({ name: 'twitter:card', content: 'summary_large_image' });
+    this.metaService.updateTag({ name: 'twitter:image', content: socialImage });
+
     // Initialize Hotjar
     Hotjar.init(parseInt(environment.hotjarSiteId), 6);
 

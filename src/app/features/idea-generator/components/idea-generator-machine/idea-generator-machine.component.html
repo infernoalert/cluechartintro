@@ -1,0 +1,89 @@
+<section class="flex flex-col items-center justify-center py-12 px-4 md:px-8 max-w-7xl mx-auto w-full">
+  <div class="w-full max-w-5xl">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+      <article class="group relative flex flex-col items-center justify-center bg-white dark:bg-surface-dark rounded-2xl h-64 md:h-80 shadow-sm border border-slate-200 dark:border-slate-800 p-8 text-center transition-all hover:-translate-y-1 hover:shadow-lg">
+        <header class="absolute top-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary/50 dark:text-white/50 text-sm">person</span>
+          <span class="text-xs font-bold tracking-widest text-primary/50 dark:text-white/50 uppercase">Who</span>
+        </header>
+        <div class="relative w-full overflow-hidden">
+          <p class="text-3xl md:text-4xl font-bold text-primary dark:text-white leading-tight break-words">
+            {{ who }}
+          </p>
+          <div class="absolute inset-x-0 top-0 h-4 bg-gradient-to-b from-white to-transparent dark:from-surface-dark pointer-events-none opacity-60"></div>
+          <div class="absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-white to-transparent dark:from-surface-dark pointer-events-none opacity-60"></div>
+        </div>
+      </article>
+
+      <article class="group relative flex flex-col items-center justify-center bg-white dark:bg-surface-dark rounded-2xl h-64 md:h-80 shadow-sm border border-slate-200 dark:border-slate-800 p-8 text-center transition-all hover:-translate-y-1 hover:shadow-lg">
+        <header class="absolute top-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary/50 dark:text-white/50 text-sm">help</span>
+          <span class="text-xs font-bold tracking-widest text-primary/50 dark:text-white/50 uppercase">Why</span>
+        </header>
+        <div class="relative w-full overflow-hidden">
+          <p class="text-3xl md:text-4xl font-bold text-primary dark:text-white leading-tight break-words">
+            {{ whyValue }}
+          </p>
+          <div class="absolute inset-x-0 top-0 h-4 bg-gradient-to-b from-white to-transparent dark:from-surface-dark pointer-events-none opacity-60"></div>
+          <div class="absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-white to-transparent dark:from-surface-dark pointer-events-none opacity-60"></div>
+        </div>
+      </article>
+
+      <article class="group relative flex flex-col items-center justify-center bg-white dark:bg-surface-dark rounded-2xl h-64 md:h-80 shadow-sm border border-slate-200 dark:border-slate-800 p-8 text-center transition-all hover:-translate-y-1 hover:shadow-lg">
+        <header class="absolute top-6 left-1/2 -translate-x-1/2 flex items-center gap-2">
+          <span class="material-symbols-outlined text-primary/50 dark:text-white/50 text-sm">widgets</span>
+          <span class="text-xs font-bold tracking-widest text-primary/50 dark:text-white/50 uppercase">What</span>
+        </header>
+        <div class="relative w-full overflow-hidden">
+          <p class="text-3xl md:text-4xl font-bold text-primary dark:text-white leading-tight break-words">
+            {{ whatValue }}
+          </p>
+          <div class="absolute inset-x-0 top-0 h-4 bg-gradient-to-b from-white to-transparent dark:from-surface-dark pointer-events-none opacity-60"></div>
+          <div class="absolute inset-x-0 bottom-0 h-4 bg-gradient-to-t from-white to-transparent dark:from-surface-dark pointer-events-none opacity-60"></div>
+        </div>
+      </article>
+    </div>
+
+    <div class="flex flex-col items-center justify-center gap-12">
+      <button
+        type="button"
+        (click)="onGenerate()"
+        class="group relative flex items-center justify-center gap-3 bg-primary text-white rounded-full px-10 h-16 text-lg font-bold shadow-md transition-all active:translate-y-0.5 active:shadow-none hover:bg-primary-dark w-full max-w-xs overflow-hidden"
+      >
+        <div class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></div>
+        <span class="material-symbols-outlined text-2xl group-hover:rotate-180 transition-transform duration-500">sync</span>
+        <span>Generate Idea</span>
+      </button>
+
+      <article class="w-full max-w-3xl mx-auto text-center border-t border-primary/10 dark:border-white/10 pt-10 px-4">
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary/5 dark:bg-white/10 text-primary/70 dark:text-white/70 text-xs font-bold uppercase tracking-wider mb-6">
+          <span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+          Synthesis
+        </div>
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-medium text-primary dark:text-white leading-snug">
+          <span class="block">
+            I want to run
+            <span class="decoration-4 underline decoration-primary/20 dark:decoration-white/20 underline-offset-4">
+              {{ whatValue }}
+            </span>
+            .
+          </span>
+          <span class="block mt-3">
+            My target market is
+            <span class="decoration-4 underline decoration-primary/20 dark:decoration-white/20 underline-offset-4">
+              {{ who }}
+            </span>
+            .
+          </span>
+          <span class="block mt-3">
+            The goal is
+            <span class="decoration-4 underline decoration-primary/20 dark:decoration-white/20 underline-offset-4">
+              {{ whyValue }}
+            </span>
+            .
+          </span>
+        </h2>
+      </article>
+    </div>
+  </div>
+</section>

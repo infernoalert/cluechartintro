@@ -1,0 +1,10 @@
+<main class="bg-background-light dark:bg-background-dark text-primary dark:text-white">
+  <app-idea-generator-hero />
+  <app-idea-generator-machine
+    [who]="selection.who"
+    [whyValue]="selection.why"
+    [whatValue]="selection.what"
+    [synthesis]="synthesis"
+    (generate)="generateIdea()"
+  />
+</main>

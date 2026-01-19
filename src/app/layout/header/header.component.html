@@ -32,6 +32,7 @@
                 <a routerLink="/marketing" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Marketing</a>
                 <a routerLink="/start-local-business" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Start Local Business</a>
                 <a routerLink="/team" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Your AI Team</a>
+                <a routerLink="/idea-generator" (click)="showUseCaseMenu = false" class="block px-4 py-3 font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">Idea Generator</a>
               </div>
             </div>
           </div>
@@ -123,6 +124,12 @@
               (click)="onMobileMenuLinkClick()"
               class="px-4 py-2 rounded-lg font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
               Your AI Team
+            </a>
+            <a 
+              routerLink="/idea-generator" 
+              (click)="onMobileMenuLinkClick()"
+              class="px-4 py-2 rounded-lg font-sans text-sm font-medium text-text-dark dark:text-white no-underline transition-colors hover:bg-primary/10 hover:text-primary dark:hover:bg-primary/20">
+              Idea Generator
             </a>
           </div>
         </div>

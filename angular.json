@@ -34,6 +34,11 @@
                 "glob": "**/*",
                 "input": "src/assets",
                 "output": "assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/config",
+                "output": "config"
               }
             ],
             "styles": [

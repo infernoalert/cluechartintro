@@ -34,5 +34,9 @@ export const routes: Routes = [
   {
     path: 'privacy-policy',
     loadComponent: () => import('./features/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent)
+  },
+  {
+    path: 'idea-generator',
+    loadComponent: () => import('./features/idea-generator/idea-generator.component').then(m => m.IdeaGeneratorComponent)
   }
 ];

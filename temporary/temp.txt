@@ -1,4 +1,151 @@
-Use GA4 or a privacy‑first tool (e.g. Plausible/Simple Analytics) as your main analytics source of truth.
-​
+Terms of Use – ClueChart
 
-Add one UX tool (Hotjar or Microsoft Clarity) for heatmaps + recordings.
+Last updated: 27 December 2025
+
+These Terms of Use (“Terms”) govern your access to and use of the ClueChart website and platform available at https://www.cluechart.com
+ (“Service”).
+
+By accessing or using ClueChart, you agree to be bound by these Terms. If you do not agree, you must not use the Service.
+
+1. About ClueChart
+
+ClueChart (“we”, “us”, or “our”) is operated by an individual and provides a software-as-a-service (SaaS) platform designed to assist users with visualisation, workflow structuring, and related tools.
+
+ClueChart may currently be offered in early access or pre-release form.
+
+2. Eligibility
+
+You must be at least 18 years old to use the Service.
+
+By using ClueChart, you confirm that you:
+
+Are legally capable of entering into binding contracts, and
+
+Will comply with these Terms and all applicable laws and regulations.
+
+3. Account Registration and Early Access
+
+Some features may require you to join a waitlist or register an account.
+
+You agree to:
+
+Provide accurate and complete information
+
+Keep your account information up to date
+
+Maintain the confidentiality of your login credentials
+
+We reserve the right to approve, deny, suspend, or terminate access to early access users at our discretion.
+
+4. Acceptable Use
+
+You agree not to use ClueChart for any unlawful, harmful, or abusive purpose, including but not limited to:
+
+Violating any laws or regulations
+
+Infringing intellectual property rights
+
+Uploading malicious code or harmful content
+
+Attempting to gain unauthorised access to systems
+
+Disrupting the performance or security of the Service
+
+We reserve the right to suspend or terminate your access for violations of this section.
+
+5. Intellectual Property
+
+All content, software, branding, and materials available through ClueChart are owned by or licensed to ClueChart and protected by intellectual property laws.
+
+You are granted a limited, non-exclusive, non-transferable, revocable licence to use the Service for its intended purposes only.
+
+You may not:
+
+Copy, modify, distribute, or reverse-engineer any part of the Service
+
+Use ClueChart branding without written permission
+
+6. User Content
+
+You retain ownership of any content you upload or create using ClueChart (“User Content”).
+
+By using the Service, you grant ClueChart a limited licence to host, process, and display your User Content solely for the purpose of providing the Service.
+
+You are responsible for ensuring your content:
+
+Does not violate any laws
+
+Does not infringe third-party rights
+
+7. Privacy
+
+Your use of the Service is also governed by our Privacy Policy, which explains how we collect, use, and protect your personal information.
+
+By using ClueChart, you consent to our data practices as described in the Privacy Policy.
+
+8. Service Availability and Changes
+
+We may:
+
+Modify, suspend, or discontinue parts of the Service at any time
+
+Add or remove features
+
+Restrict access temporarily or permanently
+
+We do not guarantee uninterrupted or error-free operation.
+
+9. Fees and Future Pricing
+
+At this stage, ClueChart may be offered free of charge or in early access.
+
+We reserve the right to introduce paid plans, subscriptions, or usage-based pricing in the future. Any changes will be communicated in advance.
+
+10. Disclaimers
+
+ClueChart is provided on an “as is” and “as available” basis.
+
+To the maximum extent permitted by law, we disclaim all warranties, including:
+
+Fitness for a particular purpose
+
+Non-infringement
+
+Accuracy or reliability of results
+
+We do not guarantee that ClueChart will meet your specific needs or expectations.
+
+11. Limitation of Liability
+
+To the maximum extent permitted by law, ClueChart shall not be liable for any indirect, incidental, consequential, or special damages, including loss of data, profits, or business interruption arising from your use of the Service.
+
+Our total liability is limited to the amount you have paid us (if any) for the Service in the 12 months prior to the claim.
+
+12. Termination
+
+We may suspend or terminate your access to ClueChart at any time, with or without notice, if you breach these Terms or misuse the Service.
+
+Upon termination:
+
+Your right to use the Service will immediately cease
+
+We may delete or deactivate your account and data (subject to legal obligations)
+
+13. Governing Law
+
+These Terms are governed by and construed in accordance with the laws of Australia, without regard to conflict of law principles.
+
+Any disputes shall be subject to the exclusive jurisdiction of the courts of Australia.
+
+14. Changes to These Terms
+
+We may update these Terms from time to time.
+
+Any changes will be posted on this page with an updated revision date. Continued use of ClueChart after changes means you accept the updated Terms.
+
+15. Contact
+
+For questions about these Terms or ClueChart, contact:
+
+Email: support@cluechart.com
+

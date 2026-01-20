@@ -36,6 +36,10 @@ export const routes: Routes = [
     loadComponent: () => import('./features/privacy-policy/privacy-policy.component').then(m => m.PrivacyPolicyComponent)
   },
   {
+    path: 'terms-of-use',
+    loadComponent: () => import('./features/terms-of-use/terms-of-use.component').then(m => m.TermsOfUseComponent)
+  },
+  {
     path: 'idea-generator',
     loadComponent: () => import('./features/idea-generator/idea-generator.component').then(m => m.IdeaGeneratorComponent)
   }
